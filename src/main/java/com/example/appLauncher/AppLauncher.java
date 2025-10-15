@@ -12,8 +12,10 @@ public class AppLauncher {
         ConexionDB conexionDB = new ConexionDB();
 
 
-
         conexionDB.infoConnection();
+
+
+
 
 
     }
