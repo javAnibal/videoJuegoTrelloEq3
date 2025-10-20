@@ -15,10 +15,6 @@ public class VideoJuego {
 
     }
 
-    public VideoJuego(int id) {
-        this.id = id;
-    }
-
     public VideoJuego(int id, String nombre, String titulo, String genero, int anio, double valoracion) {
         this.id = id;
         this.nombre = nombre;

@@ -1,11 +1,15 @@
 package com.example.utils;
 
 
+import com.example.model.GestorVideoJuego;
+import com.example.model.VideoJuego;
+
 import java.util.Scanner;
 
 public class MenuPrincipal {
     static Scanner sc = new Scanner(System.in);
 
+    GestorVideoJuego gestor = new GestorVideoJuego();
     public void miMenu(){
 
         while (true){
@@ -36,7 +40,25 @@ public class MenuPrincipal {
                     int valoracion = Integer.parseInt(sc.nextLine());
 
 
-                    //gestor.agregarVideoJuego(titulo, genero, plataforma, anyo, valoracion);
+                    /**
+                     * @juego -> creo el objeto
+                     */
+                    VideoJuego juego = new VideoJuego();
+                    juego.setTitulo(titulo);
+                    juego.setGenero(genero);
+                    juego.setPlataforma(plataforma);
+                    juego.setAnio(anyo);
+                    juego.setValoracion(valoracion);
+
+                    /**
+                     * AGREGO -> el juego a la biblioteca que contiene la estructura de SET para almacenar los objetos
+                     */
+                    try {
+                        gestor.agregarVideoJuego(juego);
+                    } catch (VideoJuegoException e) {
+                        System.err.println("No se ha podido crear el objeto VideoJuego");
+                    }
+
                 }
                 case 2-> {
                     System.out.println("Id");
