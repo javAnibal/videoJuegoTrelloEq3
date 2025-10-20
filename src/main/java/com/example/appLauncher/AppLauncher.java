@@ -43,6 +43,7 @@ public class AppLauncher {
                     int valoracion = Integer.parseInt(sc.nextLine());
 
 
+<<<<<<< HEAD
                     //gestor.agregarVideoJuego(titulo, genero, plataforma, anyo, valoracion);
                 }
                 case 2-> {
@@ -69,6 +70,9 @@ public class AppLauncher {
                 case 6 -> {
                     //gestor.mostrarTodosLosVideoJuegos();
                 }
+=======
+        conexionDB.infoConnection();
+>>>>>>> 2f16791cd68298841903ea8d6c5cc61acbcf00e7
 
                 case 7 -> {
                     //gestor.mostrarVideoJuegoMasValorados();
@@ -82,6 +86,9 @@ public class AppLauncher {
             }
 
         }
+
+
+
 
     }
 }
