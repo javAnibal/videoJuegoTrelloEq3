@@ -12,11 +12,6 @@ import com.example.utils.VideoJuegoException;
 public class GestorVideoJuego {
 
 
-
-
-
-
-
     public void agregarVideoJuego()throws VideoJuegoException {}
 
 
