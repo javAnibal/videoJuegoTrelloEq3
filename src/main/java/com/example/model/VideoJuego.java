@@ -1,5 +1,7 @@
 package com.example.model;
 
+import java.util.Objects;
+
 public class VideoJuego {
     private int  id;
     private String nombre;
@@ -93,5 +95,17 @@ public class VideoJuego {
                 ", anio=" + anio +
                 ", valoracion=" + valoracion +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        VideoJuego that = (VideoJuego) o;
+        return id == that.id && anio == that.anio && Double.compare(valoracion, that.valoracion) == 0 && Objects.equals(nombre, that.nombre) && Objects.equals(titulo, that.titulo) && Objects.equals(genero, that.genero) && Objects.equals(plataforma, that.plataforma);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, nombre, titulo, genero, plataforma, anio, valoracion);
     }
 }
