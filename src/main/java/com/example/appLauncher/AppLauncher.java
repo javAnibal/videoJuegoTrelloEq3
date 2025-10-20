@@ -12,8 +12,8 @@ public class AppLauncher {
     public static void main(String[] args) {
 
         GestorVideoJuego gestor = new GestorVideoJuego();
-        ConexionDB conexionDB = new ConexionDB();
-        conexionDB.infoConnection();
+        //ConexionDB conexionDB = new ConexionDB();
+        //conexionDB.infoConnection();
 
         while (true){
             System.out.println("Menú Principal");
@@ -43,35 +43,35 @@ public class AppLauncher {
                     int valoracion = Integer.parseInt(sc.nextLine());
 
 
-                    gestor.agregarVideoJuego(titulo, genero, plataforma, anyo, valoracion);
+                    //gestor.agregarVideoJuego(titulo, genero, plataforma, anyo, valoracion);
                 }
                 case 2-> {
                     System.out.println("Id");
                     int id = Integer.parseInt(sc.nextLine());
-                    gestor.eliminarVideoJuego(id);
+                    //gestor.eliminarVideoJuego(id);
                 }
 
                 case 3 -> {
                     System.out.println("Titulo");
                     String titulo = sc.nextLine();
-                    gestor.buscarPorTitulo(titulo);
+                    //gestor.buscarPorTitulo(titulo);
                 }
                 case 4 -> {
                     System.out.println("plataforma");
                     String plataforma = sc.nextLine();
-                    gestor.buscarPorPlataforma(plataforma);
+                    //gestor.buscarPorPlataforma(plataforma);
                 }
                 case 5 -> {
                     System.out.println("genero");
                     String genero = sc.nextLine();
-                    gestor.buscarPorGenero(genero);
+                    //gestor.buscarPorGenero(genero);
                 }
                 case 6 -> {
-                    gestor.mostrarTodosLosVideoJuegos();
+                    //gestor.mostrarTodosLosVideoJuegos();
                 }
 
                 case 7 -> {
-                    gestor.mostrarVideoJuegoMasValorados();
+                    //gestor.mostrarVideoJuegoMasValorados();
                 }
 
                 case 8 -> {
