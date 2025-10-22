@@ -1,7 +1,6 @@
 package com.example.utils;
 
 
-import com.example.model.GestorVideoJuego;
 import com.example.model.VideoJuego;
 
 import java.util.Scanner;

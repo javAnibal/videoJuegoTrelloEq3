@@ -1,6 +1,8 @@
 package com.example.model;
 
 
+
+
 import java.util.HashSet;
 
 import java.util.Set;
@@ -39,6 +41,22 @@ public class Biblioteca {
         return this.catalogo.isEmpty();
 
     }
+
+
+
+
+    public void eliminarVideoJuego()  {
+    }
+
+
+    public void mostrarTodosLosVideoJuegos()  {
+    }
+
+
+    public void mostrarVideoJuegoMasValorados() {
+    }
+
+
 
     @Override
     public String toString() {
