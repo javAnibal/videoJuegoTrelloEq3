@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class MenuPrincipal {
     static Scanner sc = new Scanner(System.in);
 
-    GestorVideoJuego gestor = new GestorVideoJuego();
+
     public void miMenu(){
 
         while (true){
@@ -38,10 +38,6 @@ public class MenuPrincipal {
                     System.out.println("Valoracion (1-10)");
                     int valoracion = Integer.parseInt(sc.nextLine());
 
-
-                    /**
-                     * @juego -> creo el objeto
-                     */
                     VideoJuego juego = new VideoJuego();
                     juego.setTitulo(titulo);
                     juego.setGenero(genero);
@@ -49,43 +45,36 @@ public class MenuPrincipal {
                     juego.setAnio(anyo);
                     juego.setValoracion(valoracion);
 
-                    /**
-                     * AGREGO -> el juego a la biblioteca que contiene la estructura de SET para almacenar los objetos
-                     */
-                    try {
-                        gestor.agregarVideoJuego(juego);
-                    } catch (VideoJuegoException e) {
-                        System.err.println("No se ha podido crear el objeto VideoJuego");
-                    }
+
 
                 }
                 case 2-> {
                     System.out.println("Id");
                     int id = Integer.parseInt(sc.nextLine());
-                    //gestor.eliminarVideoJuego(id);
+                   ;
                 }
 
                 case 3 -> {
                     System.out.println("Titulo");
                     String titulo = sc.nextLine();
-                    //gestor.buscarPorTitulo(titulo);
+
                 }
                 case 4 -> {
                     System.out.println("plataforma");
                     String plataforma = sc.nextLine();
-                    //gestor.buscarPorPlataforma(plataforma);
+
                 }
                 case 5 -> {
                     System.out.println("genero");
                     String genero = sc.nextLine();
-                    //gestor.buscarPorGenero(genero);
+
                 }
                 case 6 -> {
-                    //gestor.mostrarTodosLosVideoJuegos();
+
                 }
 
                 case 7 -> {
-                    //gestor.mostrarVideoJuegoMasValorados();
+
                 }
 
                 case 8 -> {

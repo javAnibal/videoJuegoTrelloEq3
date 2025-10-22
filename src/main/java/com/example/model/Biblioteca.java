@@ -1,8 +1,5 @@
 package com.example.model;
 
-
-
-
 import java.util.HashSet;
 
 import java.util.Set;
@@ -34,9 +31,7 @@ public class Biblioteca {
 
     //Mét-do para saber si el set del catálogo esta vacío
 
-
     public boolean estaVacio() {
-
 
         return this.catalogo.isEmpty();
 
@@ -55,6 +50,8 @@ public class Biblioteca {
 
     public void mostrarVideoJuegoMasValorados() {
     }
+
+
 
 
 
