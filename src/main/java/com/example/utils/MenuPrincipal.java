@@ -51,7 +51,7 @@ public class MenuPrincipal {
                 case 2-> {
                     System.out.println("Id");
                     int id = Integer.parseInt(sc.nextLine());
-                   ;
+
                 }
 
                 case 3 -> {
@@ -69,13 +69,9 @@ public class MenuPrincipal {
                     String genero = sc.nextLine();
 
                 }
-                case 6 -> {
+                case 6 -> {}
 
-                }
-
-                case 7 -> {
-
-                }
+                case 7 -> {}
 
                 case 8 -> {
                     System.out.println("Gracias por usar el Gestor de Videojuegos");
