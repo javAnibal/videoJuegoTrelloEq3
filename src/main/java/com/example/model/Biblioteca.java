@@ -39,12 +39,23 @@ public class Biblioteca {
 
 
 
+    public void eliminarVideoJuego(VideoJuego juego)  {
 
-    public void eliminarVideoJuego()  {
+        if (catalogo.remove(juego)) {
+            System.out.println("Videojuego eliminado: " + juego.getTitulo());
+        } else {
+            System.out.println("El videojuego no se encontró en el catálogo.");
+        }
+
     }
 
 
     public void mostrarTodosLosVideoJuegos()  {
+
+        for (VideoJuego juego : catalogo){
+            System.out.println(juego);
+        }
+
     }
 
 
