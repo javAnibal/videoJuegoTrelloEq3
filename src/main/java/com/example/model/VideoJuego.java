@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public class VideoJuego {
     private int  id;
-    private String nombre;
+
     private String titulo;
     private String genero;
     private String plataforma;
@@ -15,9 +15,9 @@ public class VideoJuego {
 
     }
 
-    public VideoJuego(int id, String nombre, String titulo, String genero, int anio, double valoracion) {
+    public VideoJuego(int id, String titulo, String genero, int anio, double valoracion) {
         this.id = id;
-        this.nombre = nombre;
+
         this.titulo = titulo;
         this.genero = genero;
         this.anio = anio;
@@ -32,13 +32,6 @@ public class VideoJuego {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
     public String getTitulo() {
         return titulo;
@@ -84,7 +77,7 @@ public class VideoJuego {
     public String toString() {
         return "VideoJuego{" +
                 "id=" + id +
-                ", nombre='" + nombre + '\'' +
+
                 ", titulo='" + titulo + '\'' +
                 ", genero='" + genero + '\'' +
                 ", plataforma='" + plataforma + '\'' +
@@ -97,11 +90,11 @@ public class VideoJuego {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         VideoJuego that = (VideoJuego) o;
-        return id == that.id && anio == that.anio && Double.compare(valoracion, that.valoracion) == 0 && Objects.equals(nombre, that.nombre) && Objects.equals(titulo, that.titulo) && Objects.equals(genero, that.genero) && Objects.equals(plataforma, that.plataforma);
+        return id == that.id && anio == that.anio && Double.compare(valoracion, that.valoracion) == 0 && Objects.equals(titulo, that.titulo) && Objects.equals(genero, that.genero) && Objects.equals(plataforma, that.plataforma);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nombre, titulo, genero, plataforma, anio, valoracion);
+        return Objects.hash(id, titulo, genero, plataforma, anio, valoracion);
     }
 }
