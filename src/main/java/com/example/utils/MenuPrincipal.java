@@ -1,12 +1,15 @@
 package com.example.utils;
 
 
+import com.example.model.Biblioteca;
 import com.example.model.VideoJuego;
 
 import java.util.Scanner;
 
 public class MenuPrincipal {
     static Scanner sc = new Scanner(System.in);
+
+    Biblioteca biblioteca = new Biblioteca();
 
 
     public void miMenu(){
@@ -45,7 +48,7 @@ public class MenuPrincipal {
                     juego.setAnio(anyo);
                     juego.setValoracion(valoracion);
 
-
+                    biblioteca.agregarVideoJuego(juego);
 
                 }
                 case 2-> {
