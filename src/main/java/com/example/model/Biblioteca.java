@@ -11,8 +11,6 @@ import java.util.Set;
 
 public class Biblioteca {
 
-    //private static ConexionDB conexionBD = new ConexionDB();
-
     private Set<VideoJuego> catalogo;
 
     public Biblioteca() {
@@ -20,7 +18,7 @@ public class Biblioteca {
     }
 
 
-    //Mét-do para agregar videoJuegos a la Biblioteca
+    //TERMINADO
 
     public void agregarVideoJuego(VideoJuego juego) {
 
@@ -51,17 +49,7 @@ public class Biblioteca {
         }
     }
 
-
-
-    //Mét-do para saber si el set del catálogo esta vacío
-
-    public boolean estaVacio() {
-
-        return this.catalogo.isEmpty();
-
-    }
-
-
+    //POR COMPLETAR
     public void eliminarVideoJuego(VideoJuego juego) {
 
         if (catalogo.remove(juego)) {
@@ -72,7 +60,7 @@ public class Biblioteca {
 
     }
 
-
+    //POR COMPLETAR
     public void mostrarTodosLosVideoJuegos() {
 
         for (VideoJuego juego : catalogo) {
@@ -81,6 +69,7 @@ public class Biblioteca {
 
     }
 
+    //POR IMPLEMENTAR
 
     public void mostrarVideoJuegoMasValorados() {
     }
